@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 
-class ProductManager {
+export class ProductManager {
   constructor() {
     this.patch = "./products.json";
     this.item = [];
@@ -80,16 +80,11 @@ class ProductManager {
   };
 }
 
-const item = new ProductManager();
-
-//Lista de productos
-//  item.addProduct("Title1", "Dscrp1", 1000, "thumbnail1", "gfd84539d", 5);
-//  item.addProduct("Title2", "Dscrp2", 2000, "thumbnail2", "gfd84239d", 6);
-//  item.addProduct("Title3", "Dscrp3", 3000, "thumbnail3", "gfd82339d", 7);
+// const item = new ProductManager();
 
 //llamamos a las siguientes funciones:
-item.getProducts();
+//item.getProducts();
 
-item.getProductsById(3);
+//item.getProductsById(3);
 
-item.deleteProduct(2);
+//item.deleteProduct(2);
